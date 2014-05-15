@@ -76,6 +76,9 @@ gem 'therubyracer', '~> 0.12.1'
 group :development do
   gem 'binding_of_caller'
   gem 'better_errors'
+  gem 'capistrano', '~> 2.15.5'
+  gem 'capistrano-unicorn', '~> 0.1.9', :require => false
+  gem 'rvm-capistrano', '~> 1.4.1'
 end
 
 group :development, :test do
@@ -93,4 +96,5 @@ end
 group :production do
   gem 'dotenv-deployment'
   gem 'rack'
+  gem 'unicorn', '~> 4.6.3'
 end
